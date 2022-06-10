@@ -8,6 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 var count = 0;
+const hostname = '0.0.0.0'
 const groupUsers = [{}];
 
 app.use(cors());
